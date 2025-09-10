@@ -1,19 +1,26 @@
 <html>
-      <head>
-        <title>Grid</title>
-        <link rel="stylesheet" href="grid.css">
-        <style>                
-        .temp {
-            border: 2px solid black;
-            width: 15%;
-            /*margin-left: 35%;*/
-            margin-top: 5%;
-            padding: 10px;
-            background-color: rgb(165, 160, 160);
+<head>
+<title>Grid</title>
+<link rel="stylesheet" href="grid.css">
+<style>                
+.temp {
+border: 2px solid black;
+width: 15%;
+/*margin-left: 35%;*/
+margin-top: 5%;
+padding: 10px;
+            background-color: rgb(139, 138, 138);
         }
-        button{
-            grid-column: span 2;
-           
+        .form{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+            background-color: rgb(165, 160, 160);
+}
+button{
+grid-column: span 2;
+
+
         }
         </style>
     </head>
@@ -49,4 +56,3 @@
         </table>
     </div>
     </body>
-</html>
